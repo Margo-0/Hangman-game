@@ -1,4 +1,4 @@
-#Hang Man project
+#Hangman project
 
 #to generate a word list I used randomlists.com
 import random
