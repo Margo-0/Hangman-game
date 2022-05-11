@@ -1,70 +1,15 @@
-#Hangman project
-
+#Hang Man project
 #to generate a word list I used randomlists.com
 import random
+from ASCII_Art import HangMan
+from ASCII_Art import logo
+from Word_List import word_list
 
-HangMan = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
-
-word_list = ["dare", "ashamed", "clover", "yoke", "chop", "reject", "chief", "power", "smoggy", "precious", "religion"]
+print(logo)
 chosen_word = random.choice(word_list) #here I randomly choose one word from the list
 Blanks = ["_"]*len(chosen_word) #here I create a list with the length of the chosen word
 
-print(f"Your word is: {chosen_word}") #testing if input letter is in this word and what is the output
+print(f"(As a hint!)Your word is: {chosen_word}") #testing if input letter is in this word and what is the output
 print(Blanks)
 
 End_of_the_Game = False
